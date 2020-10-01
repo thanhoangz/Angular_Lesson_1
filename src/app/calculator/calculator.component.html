@@ -1,112 +1,88 @@
-<div
-  class="container"
-  fxLayout="row"
-  fxLayoutWrap
-  fxLayoutGap="0.5%"
-  fxLayoutAlign="center"
->
-  <div fxFlex="10%">
-    <button mat-icon-button>
-      <mat-icon>menu</mat-icon>
-    </button>
+<div style="width: 400px">
+  <div fxLayout="row" fxLayoutWrap fxLayoutGap="16px" fxLayoutAlign="center">
+    <div fxFlex="10%">
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div fxFlex="30%" style="line-height: 40px; font-size: large">Standard</div>
+    <div fxFlex="10%">
+      <button mat-icon-button>
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+    </div>
+    <div fxFlex></div>
+    <div fxFlex="10%">
+      <button mat-icon-button>
+        <mat-icon>restore</mat-icon>
+      </button>
+    </div>
   </div>
-  <div fxFlex="30%" style="line-height: 40px; font-size: large">Standard</div>
-  <div fxFlex="10%">
-    <button mat-icon-button>
-      <mat-icon>open_in_new</mat-icon>
-    </button>
-  </div>
-  <div fxFlex></div>
-  <div fxFlex="10%">
-    <button mat-icon-button>
-      <mat-icon>restore</mat-icon>
-    </button>
-  </div>
-</div>
 
-<div
-  class="container"
-  fxLayout="row"
-  fxLayoutWrap
-  fxLayoutGap="0.5%"
-  fxLayoutAlign="center"
->
-  <div fxFlex style="height: 20vh"></div>
-</div>
+  <div class="container" fxLayout="row" fxLayoutWrap fxLayoutGap="16px" fxLayoutAlign="center">
+    <div fxFlex>
+      <!-- <div style="width: 100%; text-align: right;">{{ subResultToScreen }}</div> -->
+      <mat-form-field>
+        <input matInput style="text-align: right" readonly [ngModel]="resultToScreen" />
+      </mat-form-field>
+    </div>
+  </div>
 
-<div
-  class="container"
-  fxLayout="row"
-  fxLayoutWrap
-  fxLayoutGap="0.5%"
-  fxLayoutAlign="center"
->
-  <div fxFlex="1/6">
-    <button mat-flat-button style="background-color: lightgray">MC</button>
+  <div fxLayout="row" fxLayoutWrap fxLayoutGap="16px" fxLayoutAlign="space-between center" style="width: 400px">
+    <div fxFlex="1/6">
+      <button mat-flat-button style="background-color: lightgray">MC</button>
+    </div>
+    <div fxFlex="1/6">
+      <button mat-flat-button style="background-color: lightgray">MR</button>
+    </div>
+    <div fxFlex="1/6">
+      <button mat-flat-button style="background-color: lightgray">M+</button>
+    </div>
+    <div fxFlex="1/6">
+      <button mat-flat-button style="background-color: lightgray">M-</button>
+    </div>
+    <div fxFlex="1/6">
+      <button mat-flat-button style="background-color: lightgray">MS</button>
+    </div>
   </div>
-  <div fxFlex="1/6">
-    <button mat-flat-button style="background-color: lightgray">MR</button>
-  </div>
-  <div fxFlex="1/6">
-    <button mat-flat-button style="background-color: lightgray">M+</button>
-  </div>
-  <div fxFlex="1/6">
-    <button mat-flat-button style="background-color: lightgray">M-</button>
-  </div>
-  <div fxFlex="1/6">
-    <button mat-flat-button style="background-color: lightgray">MS</button>
-  </div>
-  <div fxFlex="1/6">
-    <button mat-flat-button style="background-color: lightgray">M`</button>
-  </div>
-</div>
 
-<div
-  class="container"
-  fxLayout="row"
-  fxLayoutWrap
-  fxLayoutGap="0.5%"
-  fxLayoutAlign="center"
->
-  <div fxFlex style="height: calc(80vh - 80px)">
-    <div
-      class="container"
-      fxLayout="row"
-      fxLayoutWrap
-      fxLayoutGap="0.5%"
-      fxLayoutAlign="center"
-    >
-      <div fxFlex="25%">
-        <button mat-flat-button>%</button>
-        <button mat-flat-button>1/x</button>
-        <button mat-flat-button>7</button>
-        <button mat-flat-button>4</button>
-        <button mat-flat-button>1</button>
-        <button mat-flat-button>+/-</button>
-      </div>
-      <div fxFlex="25%">
-        <button mat-flat-button>%</button>
-        <button mat-flat-button>1/x</button>
-        <button mat-flat-button>7</button>
-        <button mat-flat-button>4</button>
-        <button mat-flat-button>1</button>
-        <button mat-flat-button>+/-</button>
-      </div>
-      <div fxFlex="25%">
-        <button mat-flat-button>%</button>
-        <button mat-flat-button>1/x</button>
-        <button mat-flat-button>7</button>
-        <button mat-flat-button>4</button>
-        <button mat-flat-button>1</button>
-        <button mat-flat-button>+/-</button>
-      </div>
-      <div fxFlex="25%">
-        <button mat-flat-button>%</button>
-        <button mat-flat-button>1/x</button>
-        <button mat-flat-button>7</button>
-        <button mat-flat-button>4</button>
-        <button mat-flat-button>1</button>
-        <button mat-flat-button>+/-</button>
+  <div fxLayout="row" fxLayoutWrap fxLayoutGap="16px" fxLayoutAlign="space-between center" style="width: 400px">
+    <div fxFlex style="height: calc(80vh - 80px)">
+      <div fxLayout="row" fxLayoutWrap fxLayoutGap="16px" fxLayoutAlign="center">
+        <div fxFlex="25%">
+          <button mat-flat-button>%</button>
+          <button mat-flat-button>1/x</button>
+          <button mat-flat-button (click)="changeResultToScreen(7)">7</button>
+          <button mat-flat-button (click)="changeResultToScreen(4)">4</button>
+          <button mat-flat-button (click)="changeResultToScreen(1)">1</button>
+          <button mat-flat-button>+/-</button>
+        </div>
+        <div fxFlex="25%">
+          <button mat-flat-button>CE</button>
+          <button mat-flat-button>x^2</button>
+          <button mat-flat-button (click)="changeResultToScreen(8)">8</button>
+          <button mat-flat-button (click)="changeResultToScreen(5)">5</button>
+          <button mat-flat-button (click)="changeResultToScreen(2)">2</button>
+          <button mat-flat-button (click)="changeResultToScreen(0)">0/-</button>
+        </div>
+        <div fxFlex="25%">
+          <button mat-flat-button>C</button>
+          <button mat-flat-button>2vx</button>
+          <button mat-flat-button (click)="changeResultToScreen(9)">9</button>
+          <button mat-flat-button (click)="changeResultToScreen(6)">6</button>
+          <button mat-flat-button (click)="changeResultToScreen(3)">3</button>
+          <button mat-flat-button>.</button>
+        </div>
+        <div fxFlex="25%">
+          <button mat-flat-button (click)="deleteFinalNumber()">
+            <mat-icon>backspace</mat-icon>
+          </button>
+          <button mat-flat-button>/</button>
+          <button mat-flat-button>X</button>
+          <button mat-flat-button (click)="changeSubtend('-')">-</button>
+          <button mat-flat-button (click)="changeSubtend('+')">+</button>
+          <button mat-flat-button (click)="CalNumber()">=</button>
+        </div>
       </div>
     </div>
   </div>

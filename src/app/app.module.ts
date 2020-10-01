@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, NewComponentComponent, CalculatorComponent],
@@ -19,6 +22,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
+    MatInputModule, // input
+    MatFormFieldModule, // mat-form-field
+    FormsModule, // ngModel
   ],
   providers: [],
   bootstrap: [AppComponent],
